@@ -15,10 +15,29 @@ const geistMono = Geist_Mono({
   weight: ["400", "500"],
 });
 
+const SITE_URL = "https://www.ifeanyiuzoma.com";
+const SITE_TITLE = "Ifeanyi Uzoma — Product designer who engineers";
+const SITE_DESCRIPTION =
+  "Portfolio of Ifeanyi Uzoma, a product designer who ships his own code. Case studies in mobile product design, e-commerce UX and marketing sites.";
+
 export const metadata: Metadata = {
-  title: "Ifeanyi Uzoma — Product designer who engineers",
-  description:
-    "Portfolio of Ifeanyi Uzoma, a product designer who ships his own code. Case studies in mobile product design, e-commerce UX and marketing sites.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
