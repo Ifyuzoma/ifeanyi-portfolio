@@ -17,7 +17,7 @@ export function SplitBlock({
 
   return (
     <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] items-start gap-x-14 gap-y-5">
-      <div className="sticky top-[92px] flex flex-col gap-3.5">
+      <div className="flex flex-col gap-3.5 md:sticky md:top-[92px]">
         <div className="font-mono text-[11px] font-medium tracking-[0.16em] text-muted uppercase">
           {eyebrow}
         </div>

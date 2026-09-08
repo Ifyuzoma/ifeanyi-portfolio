@@ -92,7 +92,6 @@ export default function AboutPage() {
                 className="aspect-4/5 w-full rounded-md border border-line object-cover object-[50%_32%]"
                 unoptimized
               />
-              <div className="font-mono text-[11px] leading-[1.4] text-[#6B6B66]">Toronto, 2026</div>
             </div>
           </div>
         </section>
