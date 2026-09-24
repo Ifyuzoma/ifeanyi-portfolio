@@ -85,7 +85,7 @@ export default function AboutPage() {
 
             <div className="flex flex-[0_1_300px] flex-col gap-2.5">
               <Image
-                src="/uploads/portrait-ifeanyi.jpg"
+                src="/uploads/portrait-ifeanyi-bw.webp"
                 alt="Ifeanyi"
                 width={300}
                 height={375}
