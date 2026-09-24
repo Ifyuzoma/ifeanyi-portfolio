@@ -72,14 +72,21 @@ export default function AboutPage() {
                 <div className="text-[length:clamp(15px,1.5vw,17px)] leading-[1.6] text-ink">
                   Outside of pixels, prototypes, and endless Figma tabs, I&apos;m:
                 </div>
-                <div className="flex flex-col border-t border-line">
+                <ul className="m-0 flex w-full min-w-0 list-none flex-col border-t border-line p-0">
                   {offDuty.map((o) => (
-                    <div key={o.n} className="grid grid-cols-[34px_1fr] gap-3 border-b border-line py-3.5">
-                      <div className="font-mono text-xs font-medium leading-[1.5] text-[#6B6B66]">{o.n}</div>
-                      <div className="text-[15px] leading-[1.55] text-body">{o.t}</div>
-                    </div>
+                    <li
+                      key={o.n}
+                      className="grid min-w-0 grid-cols-[2rem_minmax(0,1fr)] items-center gap-x-4 border-b border-line py-3.5 sm:py-4"
+                    >
+                      <span className="font-mono text-xs font-medium leading-6 text-[#6B6B66] tabular-nums">
+                        {o.n}
+                      </span>
+                      <span className="min-w-0 text-[15px] leading-6 text-body [overflow-wrap:anywhere]">
+                        {o.t}
+                      </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
 
